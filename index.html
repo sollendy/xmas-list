@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natal-lista</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="sopra-header">
+              <h1>Natal-lista</h1>
+            </div>
+            <div class="sotto-header">
+              Spesa Totale: <span class="totale">0.00€</span>
+            </div>
+        </header>
+
+        <main>
+            <ul class="lista-doni">
+                <!-- <li class="dono">
+                    <div class="info-dono">
+                      <h3>Sara</h3>
+                      <p>Biglietti per il cinema</p>
+                    </div>
+                    <strong class="prezzo-dono">16.00€</strong>
+                    <button class="bottone-dono">❌</button>
+                </li> -->
+            </ul>
+            <form id="form-dono">
+                <div class="campi-form">
+                    <input type="text" placeholder="Nome" id="campo-nome" autofocus required>
+                    <input type="number" min="0.01" step="0.01" max="100" placeholder="Prezzo" id="campo-costo" required>
+                    <input type="text" placeholder="Regalo" id="campo-descrizione" maxlength="30" required>
+                </div>
+                <button class="bottone-form">+</button>
+            </form>
+        </main>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
